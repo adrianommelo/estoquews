@@ -11,6 +11,7 @@ import javax.xml.ws.ResponseWrapper;
 
 import br.com.caelum.estoque.modelo.item.Item;
 import br.com.caelum.estoque.modelo.item.ItemDao;
+import br.com.caelum.estoque.modelo.item.ItemValidador;
 import br.com.caelum.estoque.modelo.usuario.TokenDao;
 import br.com.caelum.estoque.modelo.usuario.TokenUsuario;
 
@@ -36,6 +37,14 @@ public class EstoqueWS {
 		if(!new TokenDao().ehValido(tokenUsuario)){
 			throw new AutorizacaoException("Autorizacao falhou.");
 		}
+		
+		
+		/**
+		 * a chamada desta validação lança uma ItemValidadorException, caso o item seja inválido.
+		 * Essa exceção é unchecked, ou seja, não faz parte do WSDL.
+		 */
+		new ItemValidador(item).validate();
+		
 		System.out.println("Cadastrando " + item + " token: " +tokenUsuario);
 		this.dao.cadastrar(item);
 		return item;
