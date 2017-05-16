@@ -1,4 +1,4 @@
-package br.com.caelum.estoque.ws;
+package br.com.caelum.estoque.ws.fault;
 
 import java.util.Date;
 

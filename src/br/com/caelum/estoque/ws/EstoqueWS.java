@@ -10,10 +10,11 @@ import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
 
 import br.com.caelum.estoque.modelo.item.Item;
-import br.com.caelum.estoque.modelo.item.ItemDao;
-import br.com.caelum.estoque.modelo.item.ItemValidador;
+import br.com.caelum.estoque.modelo.item.dao.ItemDao;
+import br.com.caelum.estoque.modelo.item.validator.ItemValidador;
 import br.com.caelum.estoque.modelo.usuario.TokenDao;
 import br.com.caelum.estoque.modelo.usuario.TokenUsuario;
+import br.com.caelum.estoque.ws.fault.AutorizacaoException;
 
 @WebService
 public class EstoqueWS {

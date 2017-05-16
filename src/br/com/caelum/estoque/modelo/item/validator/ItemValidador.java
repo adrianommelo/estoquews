@@ -1,7 +1,10 @@
-package br.com.caelum.estoque.modelo.item;
+package br.com.caelum.estoque.modelo.item.validator;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.caelum.estoque.modelo.item.Item;
+import br.com.caelum.estoque.modelo.item.TipoItem;
 
 public class ItemValidador {
 

@@ -1,4 +1,4 @@
-package br.com.caelum.estoque.modelo.item;
+package br.com.caelum.estoque.modelo.item.validator;
 
 import java.util.List;
 

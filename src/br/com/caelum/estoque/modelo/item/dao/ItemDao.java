@@ -1,10 +1,14 @@
-package br.com.caelum.estoque.modelo.item;
+package br.com.caelum.estoque.modelo.item.dao;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
+import br.com.caelum.estoque.modelo.item.Filtro;
+import br.com.caelum.estoque.modelo.item.Item;
+import br.com.caelum.estoque.modelo.item.Item.Builder;
 
 
 public class ItemDao {
