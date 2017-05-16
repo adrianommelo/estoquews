@@ -24,6 +24,7 @@ public class TokenDao {
 		USUARIOS.put(new TokenUsuario("BBB", parseDate("31/12/2015")), new Usuario.Builder().comNome("Flavio").comLogin("flavio").comSenha("pass").build());
 		USUARIOS.put(new TokenUsuario("CCC", parseDate("31/12/2015")), new Usuario.Builder().comNome("Fabio").comLogin("fabio").comSenha("pass").build());
 		USUARIOS.put(new TokenUsuario("DDD", parseDate("31/12/2015")), new Usuario.Builder().comNome("Romulo").comLogin("Romulo").comSenha("pass").build());
+		USUARIOS.put(new TokenUsuario("ADR", parseDate("18/04/1990")), new Usuario.Builder().comNome("Adriano").comLogin("Adriano").comSenha("pass").build());
 	}
 
 
